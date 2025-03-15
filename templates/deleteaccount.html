@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <a href=" http://127.0.0.1:5003/product_homepage">
+            <img class="corner-logo" src="static/images/myshelfspace.png">
+        </a>
+        <h2 class="delete_accounttitle">Please verify your credentitals</h2>
+        <form action="/account_deleted" method="POST">
+            <input type="hidden" name="csrf_token" value="{{csrf_token}}">
+            <label class="delete_accountlabel" for="deleteaccount-email">Email:</label>
+            <input class="delete_accountinput" type="email" name="deleteaccount-email" id="deleteaccount-email" required>
+            <label class="delete_accountlabel" for="deleteaccount-password">Password:</label>
+            <input class="delete_accountinput" type="password" name="deleteaccount-password" id="deleteaccount-password" required>
+            <p class="delete-statement">By completing and submitting this form, you acknowledge that deleting your account will result in the permanent removal of all your account data.
+                 This action is irreversible, and your data will be unrecoverable. </p>
+            <button class="delete_accountsubmit" type="submit">Delete Account</button>
+
+
+        </form>
+        
+        
+    </body>
+</html>

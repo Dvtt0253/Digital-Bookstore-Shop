@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body class="shelf-body">
+        <a href=" http://127.0.0.1:5003/product_homepage">
+            <img class="corner-logo" src="static/images/myshelfspace.png">
+        </a>
+        <h1 class="shelf-title">{{firstname}}'s Shelf</h1>
+    <div class="shelf-row">
+        {%for order in orders%}
+        <div class="book">
+        <a href="{{url_for('static', filename=order.book_file)}}">
+            <img class="shelf-book" src="{{url_for('static', filename=order.book_image)}}">
+
+        </a>
+            
+
+        </div>
+    {%endfor%}
+
+    </div>
+    
+    </body>
+    
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body>
+      
+        <img class="createaccount-logo" src="static/images/myshelfspace.png">
+        <h1 class="login-title">Login</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        <form action="/auth" method="POST">
+            <label class="login-label" for="login-email">Email:</label>
+        
+            <input class="login-input" type="email" name="login-email" id="login-email" required>
+            <label class="login-label" for="login-password">Password: </label>
+            <input class="login-input" type="password" name="login-password" id="login-password" required>
+            <h4 class="forgot-text">Forgot your password? <a class="forgot-link" href="http://127.0.0.1:5003/reset_page">Click here</a></h4>
+            <button class="login-submit" type="submit">Log In</button>
+
+
+
+        </form>
+        
+    </body>
+
+</html>
