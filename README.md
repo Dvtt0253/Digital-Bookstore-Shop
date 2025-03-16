@@ -18,6 +18,7 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 - **Flask**: Used for managing HTTP requests and responses for the web application
 - **SQLAlchemy**: Used for managing database entries and database queries 
 - **Argon2**: Used for hashing users' passwords to ensure secure password storage within the database.
+- **HTML and Javascript**: Used for creating the users' interface and ensuring user interactivity.
 
 
 
