@@ -10,7 +10,7 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 - **Shopping cart functionality**: Allows users to manage their shopping carts
 - **CSRF protections**: Integrates CSRF tokens into all submitted forms to protect against CSRF attacks
 - **Custom-built firewall**: protects against brute force attacks with failed login rate limiting, malicious payload injections through verifying and sanitizing user input, and DDOS attacks(denial of service attacks) through rate limiting. Additionally, it handles IP blacklisting and whitelisting.
-- **Password validation**: validates users passwords to ensure that all passwords are secure and unique
+- **Password validation**: validates users' passwords to ensure that all passwords are secure and unique
 
 
 ## Technologies used
