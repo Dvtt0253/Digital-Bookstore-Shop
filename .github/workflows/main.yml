@@ -3,30 +3,19 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment only when changes are pushed to the 'main' branch
+      - main  # Deploy when changes are pushed to the 'main' branch
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest  # Use an Ubuntu runner
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2  # Checkout the code from the repository
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # Set Node.js version
-
-      - name: Install dependencies
-        run: npm install  # Install any dependencies (e.g., for a React or static site)
-
-      - name: Build the site
-        run: npm run build  # This builds your static site (adjust based on your build system)
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4  # Action to deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.1.0  # Action to deploy to GitHub Pages
         with:
           branch: gh-pages  # Target branch for deployment
-          folder: build  # The folder where the build output is located (adjust based on your build system)
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
+          folder: .  # The folder where the static files are located (using root folder)
+          token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
