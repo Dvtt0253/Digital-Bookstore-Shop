@@ -10,14 +10,14 @@
 }
 .cart{
     
-    width: 250px; /* Adjusted width for a more compact cart */
-    max-height: 80vh; /* Limit height to 80% of viewport height */
-    overflow-y: auto; /* Allow scrolling if the cart grows too tall */
-    position: fixed; /* Fixed in place so it doesn't move when scrolling */
-    top: 80px; /* Position it slightly down from the top of the page */
-    right: 20px; /* Position it from the right side */
-    background-color: #f5f5f5; /* Light grey background */
-    padding: 15px 10px 50px 10px; /* Smaller padding for a more compact cart */
+    width: 250px; 
+    max-height: 80vh; 
+    overflow-y: auto; 
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #f5f5f5; 
+    padding: 15px 10px 50px 10px; 
     border-radius: 12px;
     border: 2px solid black;
     z-index: 1000; /
@@ -52,7 +52,7 @@
     width:300px;
     height:500px;
     margin:auto;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for separation */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
     margin-bottom:40px;
     margin-top:50px;
     padding-left:30px;
@@ -64,8 +64,8 @@
 .book_list{
     display: flex;
     
-    justify-content: space-between; /* Distributes books evenly */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    flex-wrap: wrap; 
     gap: 20px; 
 }
 .addtocart,.checkout_button{
@@ -81,13 +81,13 @@
 }
 .singlecart-item{
    
-    display: block; /* Stack items vertically */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for separation */
-    padding: 5px 10px; /* Reduced padding for a compact look */
-    width: 92%; /* Ensure it takes up the full width */
+    display: block; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    padding: 5px 10px; 
+    width: 92%; 
     background-color: white;
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 10px; /* Space between items */
+    border-radius: 10px; 
+    margin-bottom: 10px; 
     overflow: hidden;
 }
 
@@ -229,10 +229,10 @@
 }
 .logout-button, .shelf, .viewaccount{
     display: flex;
-    transform: rotate(90deg);  /* Rotates the button text 90 degrees clockwise */
+    transform: rotate(90deg);  
     transform-origin: left top;
-    position: relative; /* Ensure it's still part of the document flow */
-    left: 30px;         /* Adjust the horizontal position */
+    position: relative; 
+    left: 30px;        
     top: 10px; 
     margin-top:60px;
     white-space: nowrap;
@@ -273,8 +273,8 @@
   display: flex;
   flex-direction: row;  
   
-  justify-content: row; /* Distributes books evenly */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: row; 
+  flex-wrap: wrap; 
   gap: 50px;
   max-width: 800px;
   height: 200px;
