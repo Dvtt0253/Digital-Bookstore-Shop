@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2  # Checkout the code from the repository
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.1.0  # Action to deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4 # Action to deploy to GitHub Pages
         with:
           branch: gh-pages  # Target branch for deployment
           folder: .  # The folder where the static files are located (using root folder)
