@@ -25,7 +25,7 @@ jobs:
         run: npm run build  # This builds your static site (adjust based on your build system)
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.1.0  # Action to deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4  # Action to deploy to GitHub Pages
         with:
           branch: gh-pages  # Target branch for deployment
           folder: build  # The folder where the build output is located (adjust based on your build system)
