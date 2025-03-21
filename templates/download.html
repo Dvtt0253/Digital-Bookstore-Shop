@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <a href=" http://127.0.0.1:5003/product_homepage">
+            <img class="corner-logo" src="static/images/myshelfspace.png">
+        </a>
+        <h3 class="thankyou-title">"Thank you for your purchase! You will receive an confirmation email shortly." </h3>
+        <h3 class="download-instructions">Instructions for dowloading your ebooks: </h3>
+        <ol class="download-steps">
+            <li class="list">1. Go to your homepage</li>
+            <li class="list">2. Go to "Your Shelf"</li>
+            <li class="list">3. Click on book(s) to download your epub file(s)</li>
+        </ol>
+        <p class="download-information">These instructions will also be sent to your email address.</p>
+        <h4 class="receipt-title">Your Receipt:</h4>
+        
+
+
+        <div class="checkout-box">
+            
+            
+            {%for item in items%}
+            <div class="confirmation-item">
+                <p class="confirmation-itemname">{{item.book_name}} by {{item.book_author}}</p>
+                <h3 class="confirmation-itemprice">${{item.book_price}}</h3>
+
+            </div>
+            {%endfor%}
+            <h3 class="confirmation-total">Order Total: ${{total}}</h3>
+
+        </div>
+
+        
+    </body>
+</html>

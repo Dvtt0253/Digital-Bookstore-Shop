@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="namebanner">
+
+            <img class="logo-image" src="static/images/myshelfspace.png">
+
+        </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+       {% endwith %}
+
+       
+        <div class="book_list" id="listofbooks">
+            {%for book in books%}
+            <div class="individual-book" id="{{book.id}}">
+                
+                    <h3>{{book.book_title}}</h3>
+                    <h4>by {{book.author}}</h4>
+                    <img class="book_coverimage" src="{{url_for('static', filename=book.book_cover)}}">
+                    <h3>${{book.price}}</h3>
+
+                    <form action="/addtocart" method="POST">
+                        <input type="hidden" value="{{book.id}}" name="bookid">
+                        <button class="addtocart"type="submit">Add To Cart</button>
+
+                    </form>
+                    
+                
+
+
+            </div>
+            {%endfor%}
+           
+        </div>
+        <div>
+            <button class="cart-button"onclick="ShowCart()">
+                <img class="carticon-image" src="static/images/cart-icon.png">
+            </button>
+            <div id="cart" style="display:none;" class="cart">
+                <h2 class="cart-title">{{firstname}}'s Cart</h2>
+                {%for item in cart%}
+                <div id="itemin_cart" class="singlecart-item">
+
+                
+                    <h6 class="cart-itemname">{{item.book_name}}</h6>
+                    <p>{{item.book_author}}</p>
+                    <img class="cart-bookimage" src="{{url_for('static', filename=item.book_coverimage)}}">
+                    <h3>${{item.book_price}}</h3>
+                    <form action="/deleted_item", method="POST">
+                        <input type="hidden" name="deletedbook_id" value="{{item.item_id}}">
+                         <button class="cart-deletebutton" type="submit">
+                            <img class="trash_image"src="static/images/trash image.png">
+                         </button>
+
+                    </form>
+                    
+                {%endfor%}
+                </div>
+                <a class="checkoutbutton-link" href="http://127.0.0.1:5003/checkout">
+                    <button id="checkout_button" style="display:none;" class="checkout_button">
+                        Checkout - ${{total}}
+                    </button>
+                    
+                </a>
+                
+    
+    
+            </div>
+
+        </div>
+        <script>
+            var item_incart = document.getElementById("itemin_cart")
+            var checkout_button = document.getElementById("checkout_button")
+            if (item_incart){
+                checkout_button.style.display = "block";
+            }
+            else{
+                checkout_button.style.display = "none";
+            }
+
+        </script>
+        
+
+        <script>
+            function ShowCart() {
+                var cart_container = document.getElementById("cart");
+                if (cart_container.style.display == "none"){
+                    cart_container.style.display = "block";
+                }
+                else if(cart_container.style.display == "block"){
+                    cart_container.style.display = "none";
+                }
+            }
+
+        </script>
+        <div class="navigation-banner">
+            <form action="/logout" method="POST">
+                <input type="hidden" name="user_id" value="{{user_id}}">
+                <a class="bannerbutton-links"href="http://127.0.0.1:5003/logout">
+                    <button type="submit" class="logout-button">LogOut</button>
+    
+                </a>
+
+            </form>
+           
+            <a class="bannerbutton-links"  href="http://127.0.0.1:5003/order_shelf">
+                <button class="shelf">Your Shelf</button>
+
+            </a>
+            <a class="bannerbutton-links" href="http://127.0.0.1:5003/viewaccount">
+                <button class="viewaccount">Manage Your Account</button>
+
+
+            </a>
+            
+        </div>
+    </body>
+
+</html>

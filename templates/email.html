@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="checkout-box">
+            
+        <h2 class="email-title">Your Order Details and download instructions</h2>
+        <h3 class="download-instructions">Instructions for dowloading your ebooks: </h3>
+        <ol class="download-steps">
+            <li class="list">Go to your homepage</li>
+            <li class="list">Go to "Your Shelf"</li>
+            <li class="list">Click on book(s) to download your epub file(s)</li>
+        </ol>
+        <p class="download-information">These instructions will also be sent to your email address.</p>
+        <hr>
+            {%for book in purchased_books%}
+        
+            <div class="confirmation-item">
+                <p class="confirmation-itemname">{{book.book_title}} by {{book.author}}</p>
+                
+               
+                  
+                <h3 class="confirmation-itemprice">${{book.price}}</h3>
+
+            </div>
+            {%endfor%}
+            <h3 class="confirmation-total">Order Total: ${{total}}</h3>
+
+        </div>
+    </body>
+</html>

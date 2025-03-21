@@ -1,0 +1,557 @@
+.book_coverimage{
+
+    width:258px;
+    height:300px;
+}
+.body{
+    background-color:white;
+    color:black;
+    height:1000px;
+}
+.cart{
+    
+    width: 250px; /* Adjusted width for a more compact cart */
+    max-height: 80vh; /* Limit height to 80% of viewport height */
+    overflow-y: auto; /* Allow scrolling if the cart grows too tall */
+    position: fixed; /* Fixed in place so it doesn't move when scrolling */
+    top: 80px; /* Position it slightly down from the top of the page */
+    right: 20px; /* Position it from the right side */
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 15px 10px 50px 10px; /* Smaller padding for a more compact cart */
+    border-radius: 12px;
+    border: 2px solid black;
+    z-index: 1000; /
+}
+.cart-bookimage{
+    width:50px;
+    height:50px;
+}
+.cart-button{
+    display: block;
+    width: 70px;
+    position:absolute;
+    top:40px;
+    right:20px;
+    background-color: white;
+    border:2px solid #5D4037;
+    border-radius:19px;
+    cursor: pointer;
+
+}
+.carticon-image{
+    width:20px;
+    height:20px;
+}
+.logo-image{
+    display:block;
+    width:350px;
+    height:100px;
+}
+.individual-book{
+    
+    width:300px;
+    height:500px;
+    margin:auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for separation */
+    margin-bottom:40px;
+    margin-top:50px;
+    padding-left:30px;
+    padding-top:30px;
+    border-radius: 20px;
+    padding-bottom:20px;
+    
+}
+.book_list{
+    display: flex;
+    
+    justify-content: space-between; /* Distributes books evenly */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; 
+}
+.addtocart,.checkout_button{
+    display:block;
+    width:150px;
+    height:30px;
+    background-color:#5D4037;
+    color:white;
+    font-weight: bold;
+    white-space: nowrap;
+    border-radius:30px;
+    cursor: pointer;
+}
+.singlecart-item{
+   
+    display: block; /* Stack items vertically */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for separation */
+    padding: 5px 10px; /* Reduced padding for a compact look */
+    width: 92%; /* Ensure it takes up the full width */
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between items */
+    overflow: hidden;
+}
+
+
+
+
+.trash_image{
+    display:block;
+    width:20px;
+    height:20px;
+}
+.confirmation-item{
+    display: block;
+    width: 500px;
+    margin:auto;
+    border-bottom: 1px dotted gray;
+}
+.cart-title{
+    display: block;
+    text-align: center;
+}
+.cart-deletebutton{
+    display:block;
+    width:40px;
+    margin-bottom: 20px;
+    background-color:white;
+    border: none;
+    
+    margin-left:140px;
+   
+   
+
+}
+.checkout_button{
+    display:block;
+    margin-top:70px;
+    margin-bottom:30px;
+    cursor:pointer;
+}
+.checkout-title{
+    display:block;
+    text-align: center;
+    
+}
+
+
+
+.confirmation-itemprice{
+    display:block;
+    padding-left:390px;
+    padding-top: 20px;
+    
+    
+
+}
+.checkout-box{
+    display:block;
+    border:1px solid black;
+    width:500px;
+    margin:auto;
+    padding-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 8px;
+}
+.confirmation-total{
+    display:block;
+    text-align: center;
+    color:#e74c3c;
+}
+.confirmbutton{
+    display:block;
+    width:200px;
+    height:30px;
+    background-color:#5D4037;
+    color:white;
+    font-weight: bold;
+    white-space: nowrap;
+    border-radius:30px;
+    margin:auto;
+    margin-top:20px;
+    cursor:pointer;
+
+}
+.paypalbuttons{
+    display:block;
+    width:500px;
+    height:200px;
+    margin:auto;
+    
+}
+.paywithpaypal{
+    display: block;
+    text-align: center;
+    padding-bottom:20px;
+    color:#003366;
+}
+.reminder{
+    display:block;
+    text-align: center;
+    color:#e74c3c;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+.receipt-title{
+    display:block;
+    text-align: center;
+    font-size: larger;
+}
+.thankyou-title{
+    display: block;
+    text-align: center;
+    color:green;
+}
+.email-title{
+    display:block;
+    text-align: center;
+    padding-bottom:20px;
+}
+.download_booklink{
+    display: block;
+    color:red;
+
+}
+.downloadbook_label{
+    display: block;
+    color:red;
+}
+.navigation-banner{
+    display:block;
+    width:30px;
+    height:322px;
+    /*border:2px solid #5D4037;*/
+    position: fixed;
+    top:100px;
+    left:0px;
+ 
+    
+}
+.logout-button, .shelf, .viewaccount{
+    display: flex;
+    transform: rotate(90deg);  /* Rotates the button text 90 degrees clockwise */
+    transform-origin: left top;
+    position: relative; /* Ensure it's still part of the document flow */
+    left: 30px;         /* Adjust the horizontal position */
+    top: 10px; 
+    margin-top:60px;
+    white-space: nowrap;
+    height:30px;
+
+    padding:10px;
+    color:white;
+    background-color: #5D4037;
+    font-weight: bold;
+    padding-bottom:20px;
+    border:none;
+    cursor:pointer;
+    
+
+}
+.logout-button{
+    margin-top:-12px;
+    cursor:pointer;
+}
+.shelf{
+    margin-top:45px;
+}
+.shelf-book{
+    display:flex;
+    
+    width:169px;
+    height:220px;
+    
+   
+    margin-bottom:30px;
+}
+.shelf-title{
+    display:block;
+    color: #7A5A47;
+    text-align: center;
+}
+.shelf-row{
+  display: flex;
+  flex-direction: row;  
+  
+  justify-content: row; /* Distributes books evenly */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 50px;
+  max-width: 800px;
+  height: 200px;
+  
+  border-radius: 30px;
+  box-shadow: 0px 4px 12px rgba(93, 64, 55, 0.2);
+  margin:auto;
+  padding:40px;
+  background-color: rgba(216, 179, 140, 0.4);
+  overflow-y: auto;
+
+}
+.shelf-body{
+    background-color:  white;
+}
+.customer-info{
+    width:500px;
+    margin:auto;
+
+}
+.profilepicture{
+    display:block;
+    margin:auto
+}
+.viewaccountname, .viewaccountdate{
+    display:block;
+    text-align: center;
+}
+.viewaccount-logout, .viewaccount-deleteaccount{
+    display: block;
+    background-color: white;
+    border:none;
+    color:#5D4037;
+    font-size: larger;
+    cursor: pointer;
+   
+    
+}
+.viewaccount-logoutlink, .viewaccount-deleteaccountlink{
+    text-decoration: none;
+}
+.create-label, .login-label, .change-passwordlabel, .delete_accountlabel, .reset-passwordlabel, .reset_label, .code-label{
+    display:block;
+    text-align: center;
+    color:#7A5A47;
+
+}
+.create-input, .login-input, .change-passwordinput, .delete_accountinput, .reset-passwordinput, .reset_input, .code-input{
+
+    display:block;
+    width:200px;
+    height:30px;
+    margin:auto;
+    margin-bottom:20px;
+
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.create-title, .login-title, .change-passwordtitle, .delete_accounttitle, .reset_passwordtitle, .reset_title, .reset_subtitle, .identity-title, .code-title{
+    display:block;
+    text-align:center;
+    color:#7A5A47;
+
+}
+.create-submit, .login-submit{
+    display:block;
+    height:30px;
+    width:90px;
+    margin:auto;
+    border-radius: 30px;
+    color:white;
+    background-color: #7A5A47;
+    margin-top:60px;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+.name-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    gap:10px;
+    width:530px;
+    margin:auto;
+    margin-bottom:40px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#first_name,#last_name{
+    display:flex;
+    display:block;
+    width:200px;
+    height:30px;
+    margin:auto;
+
+    border-radius: 30px;
+    margin-right:20px;
+    padding-right:10px;
+    padding-left:10px;
+
+}
+#firstnamelabel, #lastnamelabel{
+    display:block;
+    text-align: center;
+    color:#7A5A47;
+    white-space: nowrap;
+
+}
+.name-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    gap:200px;
+    width:330px;
+    margin:auto;
+    
+
+}
+.createaccount-logo{
+   display:block;
+   width:200px;
+   margin:auto;
+   
+}
+.login-redirect{
+    text-align: center;
+}
+.login-redirectlink, .changepassword_link{
+    color:red;
+}
+.change-passwordsubmit, .delete_accountsubmit, .reset_passwordsubmit, .reset_submit, .code-submit{
+    display:block;
+    height:30px;
+    width:150px;
+    margin:auto;
+    border-radius: 30px;
+    color:white;
+    background-color: #7A5A47;
+    margin-top:60px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor:pointer;
+
+
+}
+.change-email{
+    display: block;
+    width:150px;
+    height:20px;
+    border-radius: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-right:8px;
+    padding-left:8px;
+
+}
+.change-button{
+    display:block;
+    width:100px;
+    height:30px;
+    border-radius: 30px;
+    color:white;
+    background-color: #7A5A47;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor:pointer;
+}
+.delete-statement{
+    display:block;
+    color:red;
+    white-space:wrap;
+}
+.download-instructions,.download-steps, .download-information, .list{
+    display:block;
+    color:red;
+    text-align: center;
+}
+.flash-messages{
+    display:block;
+    border: 1px solid #333333;
+    background-color:#888888 ;
+    color:white;
+    width:800px;
+    margin:auto;
+  
+    padding-right: 20px;
+    padding-left:20px;
+    height:30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    margin-bottom:20px;
+
+
+}
+.checkoutbutton-link{
+    text-decoration: none;
+}
+.bannerbutton-links{
+    text-decoration: none;
+}
+button:not(.cart-button,.viewaccount-logout, .viewaccount-deleteaccount,.cart-deletebutton):hover{
+    background-color: #d2b79f;
+}
+.confirm-buttonlink{
+    text-decoration: none;
+}
+#forbidden-title{
+    display:block;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+   
+}
+#forbidden-subtitle{
+    display:block;
+    text-align: center;
+    font-size: 49px;
+    font-weight: bold;
+   
+}
+#forbidden-message{
+    display:block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+
+
+
+}
+.identity-message{
+    display:block;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+}
+.password-info{
+    display:block;
+    width:850px;
+    height:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    margin:auto;
+    color:#e74c3c;
+    background-color: #fadbd8;
+    margin-bottom:30px;
+    margin-top:20px;
+    white-space: nowrap;
+    text-align: center;
+
+}
+.forgot-text{
+    display:block;
+    text-align: center;
+    padding-top:20px;
+    
+    color:#e74c3c;
+}
+.forgot-link{
+    color: #6a7f92;
+}
+.forgot-link:hover{
+    color:#4e6272;
+
+}
+.forgot-link:active{
+    color:#3b4a54;
+}
+
+
+
