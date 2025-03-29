@@ -552,6 +552,718 @@ button:not(.cart-button,.viewaccount-logout, .viewaccount-deleteaccount,.cart-de
 .forgot-link:active{
     color:#3b4a54;
 }
+.footer_page{
+    display:block;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:320px;
+    margin:0;
+    z-index:-999;
+    
+    
+    
+    background-color: #d2b79f;
+   color:black;
+}
+.footer-logo{
+    width:150px;
+    margin:auto;
+    margin-top:10px;
+    
+}
+.footer-links{
+    display:flex;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    margin-top:10px;
+   justify-content: space-between;
+    margin-left:20px;
+  
+}
+.footer-1{
+    margin-bottom:-200px;
+
+}
+.footer-2{
+    margin-bottom:-300px;
+
+}
+.main-content{
+    margin-bottom: 500px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 10px;
+    padding-bottom:60px;
+    
+    
+    
+   
+
+   
+ 
+    
+}
+.footer-title{
+    white-space: nowrap;
+    color:black;
+}
+.paypal-icon{
+    display:block;
+    width:20px;
+    margin-left:5%;
+    margin-top:30px;
+}
+.media-icons{
+    display:block;
+    position:relative;
+    bottom:50px;
+    left:80%;
+    height:50px;
+    width:100px;
+
+    
+    margin-top:00px;
+}
+.footer-anchor{
+    text-decoration: none;
+}
+.footer-header{
+    white-space: nowrap;
+}
+.copyright{
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:5px;
+    font-size: 14px;
+}
+
+@media (min-width:200px) and (max-width:400px) {
+    .createaccount-logo{
+        display:block;
+        width:100px;
+        margin:auto;
+        margin-left: 140px;
+       
+        
+        
+     }
+     .create-title, .login-title, .change-passwordtitle, .delete_accounttitle, .reset_passwordtitle, .reset_title, .reset_subtitle, .identity-title, .code-title{
+        font-size:15px;
+        text-align: left;
+        padding-left:130px;
+    
+     }
+     .password-info{
+        display:block;
+        width:150px;
+        height:60px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:10px;
+        padding-right:10px;
+        margin:auto;
+        color:#e74c3c;
+        background-color: #fadbd8;
+        margin-bottom:30px;
+        margin-top:20px;
+        white-space: wrap;
+        text-align: center;
+        font-size:9px;
+        overflow-wrap: break-word;
+        margin-left:100px;
+    
+    }
+    .create-input, .login-input, .change-passwordinput, .delete_accountinput, .reset-passwordinput, .reset_input, .code-input{
+
+        display:block;
+        width:150px;
+        height:30px;
+        margin:auto;
+        margin-left:95px;
+        margin-bottom:10px;
+    
+        border-radius: 30px;
+        padding-right:10px;
+        padding-left:10px;
+    }
+    #first_name,#last_name{
+        display:flex;
+        display:block;
+        width:100px;
+        height:30px;
+        margin:auto;
+    
+        border-radius: 30px;
+        margin-right:20px;
+        padding-right:10px;
+        padding-left:10px;
+    
+    }
+    .name-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: row;
+        gap:1px;
+        width:400px;
+        margin:auto;
+        margin-left:-50px;
+        margin-bottom:40px;
+        padding-left:20px;
+        padding-right:20px;
+    
+    }
+    .name-label{
+        display: flex;
+        flex-direction: row;
+        justify-content: row;
+        gap:150px;
+        width:300px;
+        margin:auto;
+        
+    
+    }
+    .login-title {
+        padding-left:150px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .logo-image{
+        display:block;
+        width:100px;
+        height:50px;
+    }
+    .flash-messages{
+        display:block;
+        border: 1px solid #333333;
+        background-color:#888888 ;
+        color:white;
+        width:200px;
+        margin:auto;
+        margin-left:50px;
+      
+        padding-right: 20px;
+        padding-left:20px;
+        height:30px;
+        text-align: center;
+        font-weight: bold;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word; 
+        margin-bottom:20px;
+        font-size:11px;
+    
+    
+    }
+    .customer-info{
+        width:500px;
+        margin:auto;
+       
+    
+    }
+    .profilepicture{
+        display:block;
+        margin:auto;
+    }
+    .corner-logo{
+        width:100px;
+    }
+    .checkout-box{
+        display:block;
+        border:1px solid black;
+        width:200px;
+        margin:auto;
+        padding-top:30px;
+        padding-left:10px;
+        padding-right:15px;
+        border-radius: 8px;
+        overflow-wrap: break-word;
+    }
+    .confirmation-itemprice{
+        display:block;
+        padding-left: 100px;
+       
+        padding-top: 10px;
+        
+        
+    
+    }
+    .paypalbuttons{
+    display:block;
+    width:200px;
+    height:200px;
+    margin:auto;
+    
+}
+.footer_page{
+    display:block;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:auto;
+    margin:0;
+    z-index:-999;
+    padding-left:10px;
+    padding-right: 10px;
+    
+    
+    
+    
+    background-color: #d2b79f;
+   color:black;
+}
+.footer-logo{
+    width:150px;
+    margin:auto;
+    margin-top:10px;
+
+}
+.footer-links{
+    display:flex;
+    height:200px;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    /*gap:100px;*/
+    justify-content: space-between;
+    width:90%;
+    margin-top:10px;
+    
+    font-size: 9px;
+  
+    margin-left:0px;
+    padding-left:5px;
+    padding-right:5px;
+  
+}
+.footer-1{
+    margin-bottom:-200px;
+
+}
+.footer-2{
+    margin-bottom:-300px;
+
+}
+.main-content{
+    margin-bottom: 500px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 10px;
+    padding-bottom:60px;
+    
+    
+    
+   
+
+   
+ 
+    
+}
+.footer-title{
+    white-space: nowrap;
+    color:black;
+}
+.paypal-icon{
+    display:block;
+    width:30px;
+    margin-left:0px;
+    margin-top:40px;
+}
+.media-icons{
+    display:block;
+    position:relative;
+    bottom:50px;
+    left:70%;
+    height:70px;
+    width:120px;
+
+    
+    margin-top:00px;
+}
+.footer-anchor{
+    text-decoration: none;
+}
+.footer-header{
+    white-space: nowrap;
+}
+.copyright{
+    display:blocks;
+    position:absolute;
+    bottom:0px;
+    left:5px;
+    
+}
+
+   
+    
+}
+@media (min-width:500px) and (max-width:800px) {
+    .password-info{
+        display:block;
+        width:300px;
+        height:60px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:10px;
+        padding-right:10px;
+        margin:auto;
+        color:#e74c3c;
+        background-color: #fadbd8;
+        margin-bottom:30px;
+        margin-top:20px;
+        white-space: wrap;
+        text-align: center;
+        font-size:9px;
+        overflow-wrap: break-word;
+        margin-left:100px;
+    
+    }
+    .name-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: row;
+        gap:10px;
+        width:530px;
+        margin:auto;
+        margin-left:-40px;
+        margin-bottom:40px;
+        padding-left:20px;
+        padding-right:20px;
+    
+    }
+    .flash-messages{
+        display:block;
+        border: 1px solid #333333;
+        background-color:#888888 ;
+        color:white;
+        width:400px;
+        margin:auto;
+        margin-left:50px;
+      
+        padding-right: 20px;
+        padding-left:20px;
+        height:30px;
+        text-align: center;
+        font-weight: bold;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word; 
+        margin-bottom:20px;
+        font-size:11px;
+    
+    
+    }
+    .footer_page{
+    display:block;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:auto;
+    margin:0;
+    z-index:-999;
+    padding-left:10px;
+    padding-right: 10px;
+    
+    
+    
+    
+    background-color: #d2b79f;
+   color:black;
+}
+.footer-logo{
+    width:150px;
+    margin-top:10px;
+   
+    margin:auto;
+    
+}
+.footer-links{
+    display:flex;
+    height:200px;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*gap:100px;*/
+    width:90%;
+    margin-top:10px;
+    
+    font-size: 9px;
+  
+    margin-left:0px;
+    padding-left:5px;
+    padding-right:5px;
+  
+}
+.footer-1{
+    margin-bottom:-200px;
+
+}
+.footer-2{
+    margin-bottom:-300px;
+
+}
+.main-content{
+    margin-bottom: 500px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 10px;
+    padding-bottom:60px;
+    
+    
+    
+   
+
+   
+ 
+    
+}
+.footer-title{
+    white-space: nowrap;
+    color:black;
+}
+.paypal-icon{
+    display:block;
+    width:30px;
+    margin-left:0px;
+    margin-top:40px;
+}
+.media-icons{
+    display:block;
+    position:relative;
+    bottom:50px;
+    left:80%;
+    height:70px;
+    width:120px;
+
+    
+    margin-top:00px;
+}
+.footer-anchor{
+    text-decoration: none;
+}
+.footer-header{
+    white-space: nowrap;
+}
+.copyright{
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:5px;
+}
+
+    
+
+}
+
+
+@media (min-width:400px) and (max-width:500px) {
+    .createaccount-logo{
+        display:block;
+        width:150px;
+        margin:auto;
+        margin-left: 120px;
+       
+        
+        
+     }
+     .create-title, .login-title, .change-passwordtitle, .delete_accounttitle, .reset_passwordtitle, .reset_title, .reset_subtitle, .identity-title, .code-title{
+        font-size:15px;
+        text-align: left;
+        padding-left:130px;
+    
+     }
+     .password-info{
+        display:block;
+        width:150px;
+        height:60px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:10px;
+        padding-right:10px;
+        margin:auto;
+        color:#e74c3c;
+        background-color: #fadbd8;
+        margin-bottom:30px;
+        margin-top:20px;
+        white-space: wrap;
+        text-align: center;
+        font-size:9px;
+        overflow-wrap: break-word;
+        margin-left:100px;
+    
+    }
+    .create-input, .login-input, .change-passwordinput, .delete_accountinput, .reset-passwordinput, .reset_input, .code-input{
+
+        display:block;
+        width:150px;
+        height:30px;
+        margin:auto;
+        margin-left:120px;
+        margin-bottom:10px;
+    
+        border-radius: 30px;
+        padding-right:10px;
+        padding-left:10px;
+    }
+    #first_name,#last_name{
+        display:flex;
+        display:block;
+        width:100px;
+        height:30px;
+        margin:auto;
+    
+        border-radius: 30px;
+        margin-right:20px;
+        padding-right:10px;
+        padding-left:10px;
+    
+    }
+    .name-input{
+        display: flex;
+        flex-direction: row;
+        justify-content: row;
+        gap:1px;
+        width:400px;
+        margin:auto;
+        margin-left:-50px;
+        margin-bottom:40px;
+        padding-left:20px;
+        padding-right:20px;
+    
+    }
+    .name-label{
+        display: flex;
+        flex-direction: row;
+        justify-content: row;
+        gap:130px;
+        width:300px;
+        margin:auto;
+        
+    
+    }
+    .login-title {
+        padding-left:160px;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .logo-image{
+        display:block;
+        width:100px;
+        height:50px;
+    }
+    .flash-messages{
+        display:block;
+        border: 1px solid #333333;
+        background-color:#888888 ;
+        color:white;
+        width:200px;
+        margin:auto;
+        margin-left:60px;
+      
+        padding-right: 20px;
+        padding-left:20px;
+        height:30px;
+        text-align: center;
+        font-weight: bold;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word; 
+        margin-bottom:20px;
+        font-size:11px;
+    
+    
+    }
+    .customer-info{
+        width:500px;
+        margin:auto;
+       
+    
+    }
+    .profilepicture{
+        display:block;
+        margin:auto;
+    }
+    .corner-logo{
+        width:100px;
+    }
+    .checkout-box{
+        display:block;
+        border:1px solid black;
+        width:250px;
+        margin:auto;
+        padding-top:30px;
+        padding-left:10px;
+        padding-right:15px;
+        border-radius: 8px;
+        overflow-wrap: break-word;
+        font-size: 8px;
+    }
+    .confirmation-itemprice{
+        display:block;
+        padding-left: 100px;
+       
+        padding-top: 10px;
+        
+        
+    
+    }
+    .paypalbuttons{
+        display:block;
+        width:200px;
+        height:200px;
+        margin:auto;
+    
+
+}
+.footer-links{
+    font-size: 9px;
+}
+}
+@media (min-width:701px) and (max-width:900px)
+{
+    .flash-messages{
+        width:500px;
+        overflow-wrap: break-word;
+
+    }
+    .password-info{
+        display:block;
+        width:550px;
+        height:60px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:10px;
+        padding-right:10px;
+        margin:auto;
+        color:#e74c3c;
+        background-color: #fadbd8;
+        margin-bottom:30px;
+        margin-top:20px;
+        white-space: wrap;
+        text-align: center;
+        font-size:15px;
+        overflow-wrap: break-word;
+       
+    
+    }
+}
+
+
+
+
 
 
 
