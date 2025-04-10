@@ -14,8 +14,16 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 4. Before running the app, ensure that port 5003 is cleared with `lsof -i :5003` and if occupied clear the ports with `kill -9 <PID(enter the PID number here)>`
 5. Run the app with the following command: `python newstore.py or python3 newstore.py`
 
+### Click the link below to view the Live Demo website ####
+*Please note that this is a **Demo** version of the web application meaning that most of the website's functionality such as, account management permissions, IP Tracking, and account verification are disabled to provide a simpler and more secure demonstration. To view the website's full functionality and features, watch the **Demo Videos** which are linked next.*
+**Here are your Login credentials to access the demo user account for full access to the store**: Email: "Demouser@Demo.com",  Password: "Demoaccount123?"
+
+[Click here to access the live demo website of ShelfSpace](https://digital-bookstore-shop-shelfspace.onrender.com)
+
+
+
 #### Click the link below to view the Demo videos for the digital bookstore - ShelfSpace ####
-[Click here to view the demo videos](https://drive.google.com/drive/folders/1tzoSzPOW6Vlq4D9VJZwics7ACSoyuMjc?usp=drive_link)
+[Click here to watch the demo videos](https://drive.google.com/drive/folders/1tzoSzPOW6Vlq4D9VJZwics7ACSoyuMjc?usp=drive_link)
 
 
 
