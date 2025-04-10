@@ -43,7 +43,10 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 
 This project is licensed under the All Rights Reserved License.
 
-See the [License](./LICENCE.txt) for more information and further details.
+See the [License](./LICENSE.txt) for more information and further details.
+
+
+
 
 
 
