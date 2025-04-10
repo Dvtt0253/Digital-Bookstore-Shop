@@ -38,6 +38,13 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 
 
 
+
+## Copyright
+
+Copyright (c) 2025 Joie Harvey. All rights reserved.
+
+
+
   
   
 
