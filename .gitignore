@@ -1,2 +1,7 @@
-instance/
+
+
+instance/order.db
+instance/tokens.db
+instance/user.sql
+instance/users.db
 .env

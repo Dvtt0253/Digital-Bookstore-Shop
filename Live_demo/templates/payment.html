@@ -1,0 +1,76 @@
+<!-- Copyright (c) 2025 Joie Harvey. All rights reserved. -->
+<!-- This code may not be used, modified, or distributed without permission. -->
+<!-- License: All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://www.paypal.com/sdk/js?client-id=ASoDBYP69_rSN5_OtvkRvXE2HfVoyNJGjDgFHO6sVFIASuRAr9hpEnL8jo5GRo_EQjXBRRZKJnL9LcLq&components=buttons"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <a href=" http://127.0.0.1:5003/product_homepage">
+            <img class="corner-logo" src="static/images/myshelfspace.png">
+        </a>
+        <h1 class="paywithpaypal">Pay With PayPal</h1>
+        <p class="reminder">If your payment is successful, you will be redirected to the download instructions for your ebook files shortly. Please wait a moment for your payment to process.  </p>
+        <div class="paypalbuttons" id="paypal-buttons">
+        
+        
+    
+        <script>
+          
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '{{total}}' 
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        window.location.href = 'http://127.0.0.1:5003/download_link';
+                        <!--alert('Transaction completed by ' + details.payer.name.given_name);
+                        
+                        fetch('/verify-payment', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    paymentID: data.orderID,
+                    payerID: data.payerID
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Payment Successful!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+                       
+                    });
+                },
+                onError: function(err) {
+                    console.log('PayPal Error:', err);
+                    alert("Payment failed.")
+                }
+            }).render('#paypal-buttons'); 
+        </script>
+        </div>
+    
+        
+    
+        
+        
+
+    </body>
+
+</html>

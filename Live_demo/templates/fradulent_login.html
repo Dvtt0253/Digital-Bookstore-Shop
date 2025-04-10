@@ -1,0 +1,30 @@
+<!-- Copyright (c) 2025 Joie Harvey. All rights reserved. -->
+<!-- This code may not be used, modified, or distributed without permission. -->
+<!-- License: All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+        
+        <h5 class="code-title">You are attempting to log in from a new device. For your security, please verify the six-digit code sent to your email address to complete the login process.</h5>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+       {% endwith %}
+        <form action="/verify_code" method="POST">
+            <label class="code-label" for="entered-code">Enter your code here: </label>
+            <input class="code-input" type="number" id="entered-code" name="entered-code"  maxlength="6" minlength="6">
+            <

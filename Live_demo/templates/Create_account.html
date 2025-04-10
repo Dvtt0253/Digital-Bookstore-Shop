@@ -1,0 +1,86 @@
+<!-- Copyright (c) 2025 Joie Harvey. All rights reserved. -->
+<!-- This code may not be used, modified, or distributed without permission. -->
+<!-- License: All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset ="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img class="createaccount-logo" src="static/images/myshelfspace.png">
+        <h1 class="create-title">Create an Account</h1>
+
+        <div class="password-info">
+            <h4>Password must be at least 8 characters, must contain at least 1 digit, and 1 special character. </h4>
+
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        
+        <form action="/create_account" method="POST" id="newaccount_form">
+            <div class="name-label">
+                <label id="firstnamelabel" for="first_name">First Name:</label>
+                <label id="lastnamelabel"  for="last_name">Last Name:</label>
+            </div>
+            <div class="name-input">
+                
+                <input  type="text" id="first_name" name="first_name" required>
+               
+                <input type="text" id="last_name" name="last_name" required>
+
+            </div>
+            
+            
+            <label class="create-label" for="email">Email:</label>
+            <input class="create-input" type="email" id="email" name="email" required>
+           
+            <label class="create-label" for="password">Password</label>
+            <input class="create-input" minlength="8" type="password" id="password" name="password" required>
+
+            <script>
+                document.getElementById("newaccount_form").onsubmit = function(event) {
+                    var entered_password = document.getElementById("password").value;
+
+                    if(entered_password.length < 8){
+                        alert("Password must be at least 8 characters long");
+                        event.preventDefault();
+                        return false;
+                    }
+                    if(!/\d/.test(entered_password)){
+                        alert("Password must contain at least one digit");
+                        event.preventDefault();
+                        return false;
+                    }
+                    if(!/[!@$%&*(),.?{}<>]/.test(entered_password)){
+                        alert("Password must contain at least one of the following characters:[!@$%&*(),.?{}<>] ");
+                        event.preventDefault();
+                        return false;
+                    }
+
+                    return true;
+                };
+            </script>
+            
+            
+
+            
+            <button class="create-submit" type="submit">Sign up!</button>
+            <p class="login-redirect">Already have an account?<a class="login-redirectlink" href=" http://127.0.0.1:5003/login_page">Sign in here!</a> </p>
+
+        </form>
+    </body>
+</html>

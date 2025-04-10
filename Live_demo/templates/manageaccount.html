@@ -1,0 +1,74 @@
+<!-- Copyright (c) 2025 Joie Harvey. All rights reserved. -->
+<!-- This code may not be used, modified, or distributed without permission. -->
+<!-- License: All Rights Reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        <a href=" http://127.0.0.1:5003/product_homepage">
+            <img class="corner-logo" src="static/images/myshelfspace.png">
+        </a>
+        <div class="customer-info">
+            <img class="profilepicture" src="static/images/profilepicture.jpeg">
+            <h3 class="viewaccountname">{{firstname}} {{lastname}}</h3>
+            <p class="viewaccountdate">Customer since {{joindate}}</p>
+            <hr>
+            <h4>Contact Email: {{email}}</h4>
+            <p>Need to change your email address?</p>
+            <label for="change-email">New-email address:</label>
+            <form action="/change_email" method="POST">
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}">
+                <input class="change-email" id="change-email" name="change-email" type="email">
+                <button class="change-button" type="submit">Change</button>
+
+            </form>
+            <hr>
+            <h4>Manage Password</h4>
+            Change your password?
+            <a class="changepassword_link"href="http://127.0.0.1:5003/change_password">
+                Click here
+            </a>
+            <hr>
+            <form action="/logout" method="POST">
+                <input type="hidden" name="user_id" value="{{user_id}}">
+                <a class="viewaccount-logoutlink"href="http://127.0.0.1:5003/login_page">
+                    <button type="submit" class="viewaccount-logout">LogOut</button>
+    
+                </a>
+
+            </form>
+            
+            <hr>
+            <a class="viewaccount-deleteaccountlink" href="http://127.0.0.1:5003/delete_account">
+                <button class="viewaccount-deleteaccount">Delete Your Account</button>
+
+            </a>
+            
+
+            
+            
+
+
+
+        </div>
+        
+    </body>
+</html>
