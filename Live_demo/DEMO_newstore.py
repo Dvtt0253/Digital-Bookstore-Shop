@@ -21,12 +21,6 @@ from firewall_lib.flask_firewall import Firewall
 # Licensed under the All Rights Reserved. Unauthorized use or redistribution is prohibited.
 
 
-"""SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
-sender_email = os.getenv('EMAIL')
-email_password = os.getenv('EMAIL_PASSWORD')
-
-dotenv.load_dotenv()"""
 
 
 
@@ -186,50 +180,6 @@ def create_token(length):
     token = ''.join(secrets.choice(alphabet) for _ in range(length))
     return token
 
-"""def send_verificationemail(email, token, subject, html):
-    try:
-        msg = MIMEMultipart()
-        msg['From'] = sender_email
-        msg['To'] = email
-        msg['Subject'] = subject
-        html_content = render_template(html, verify_token=token)
-        msg.attach(MIMEText(html_content, 'html'))
-
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()
-            server.login(sender_email, email_password)
-            server.sendmail(sender_email, email , msg.as_string())
-    except Exception as e:
-        print(f"Error while sending email {e}")
-
-def send_code(email, code, subject):
-    try:
-        msg = MIMEMultipart()
-        msg['From'] = sender_email
-        msg['To'] = email
-        msg['Subject'] = subject
-        html_content = render_template('confirmation_code.html', code=code)
-        msg.attach(MIMEText(html_content, 'html'))
-
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()
-            server.login(sender_email, email_password)
-            server.sendmail(sender_email, email , msg.as_string())
-    except Exception as e:
-        print(f"Error while sending email {e}")
-
-def get_device_info():
-    user_agent = request.headers['User-Agent']
-    start = user_agent.find('(') + 1
-    end = user_agent.find(')')
-    
-    if start > 0 and end > start:
-         device_info = user_agent[start:end]
-    else: 
-        device_info = user_agent
-
-    return device_info"""
-    
 
 
 
@@ -298,13 +248,7 @@ def create_account():
     token_expiry = token_created + timedelta(hours=24)
     new_user = Demo_user.query.filter_by(email=email).first()
 
-    """subject = "Verify Your ShelfSpace Email Address!"
-    html = 'redirect_verify.html'
-
     
-
-    send_verificationemail(email, users_token, subject, html)"""
-
     
     
     
@@ -404,23 +348,7 @@ def authenticate():
                     db.session.rollback()
                     flash("Incorrect password, Try again.", category="error")
                     return redirect(url_for('login_page'))
-                """if returning_user.user_ip is None and returning_user.user_agent is None:
-
-                    user_ip = request.remote_addr
-                    user_agent = get_device_info()
-                    returning_user.user_ip = user_ip
-                    returning_user.user_agent = user_agent
-                    db.session.commit()
-                else:
-                    current_ip = request.remote_addr
-                    current_agent = request.headers['User-Agent']
-                    if returning_user.user_ip != current_ip: #or returning_user.user_agent != current_agent:
-                        session['attempt_id'] = returning_user.id
-                        code = str(random.randint(100000,999999))
-                        subject = "New Device Login Attempt on ShelfSpace: Verify Your Identity"
-                        send_code(returning_email, code, subject)
-                        return render_template('fradulent_login.html', code=code)"""
-                    
+             
                 csrf_token = generate_csrf_token()
                         
                 session['first_name'] = returning_user.first_name
@@ -556,22 +484,7 @@ def download_link():
         db.session.commit()
 
 
-    """try:
-        msg = MIMEMultipart()
-        msg['From'] = sender_email
-        msg['To'] = session['email']
-        msg['Subject'] = "Your Order from ShelfSpace has been Processed! Your Downloadable files are included below!"
-        html_content = render_template('email.html', purchased_books=purchased_bookfiles, items=ordered_item, total=TotalPrice())
-        msg.attach(MIMEText(html_content, 'html'))
-
-        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-            server.starttls()
-            server.login(sender_email, email_password)
-            server.sendmail(sender_email, session['email'] , msg.as_string())
-    except Exception as e:
-        print(f"Error while sending email {e}")"""
-
-
+   
     return render_template('download.html', purchased_books=purchased_bookfiles, items=ordered_item, total=TotalPrice())
 
 @app.route('/order_shelf')
@@ -604,176 +517,6 @@ def view_account():
 
         return render_template('manageaccount.html', csrf_token=session['csrf'], user_id=session['id'], firstname=session['first_name'], lastname=session['last_name'], email=session['email'], joindate=formattedjoin_date)
 
-"""@app.route('/change_email', methods=['POST'])
-def change_email():
-    is_blocked = firewall.block_access()
-    is_ratelimited = firewall.rate_limiter()
-
-    if is_blocked == 403:
-       return render_template('403_page.html'), 403
-
-
-   
-    if request.method == 'POST':
-        if is_ratelimited == 429:
-            return render_template('requests_429.html'), 429
-        csrf_token = request.form['csrf_token']
-
-        new_email = firewall.santitize_input(request.form['change-email'].lower())
-        if firewall.identify_payloads(new_email) == 403:
-            return render_template('malicious_403.html'), 403
-        if csrf_token:
-            if csrf_token == session['csrf']:
-
-                if new_email:
-                    user = User.query.filter_by(id=session['id']).first()
-                    user.email = new_email
-        
-                    db.session.commit()
-                    flash("Your email has been updated successfully!", category="success")
-
-                    return redirect(url_for('view_account'))
-                else:
-                    flash("No email entered. Please enter your new email address.", category="error")
-                    return redirect(url_for('view_account'))
-            else:
-                flash("CSRF token is incorrect, request cannot be completed.", category="error")
-                return redirect(url_for('view_account'))
-        else:
-            flash("Missing CSRF  token. Request cannot be completed.", category="error")
-
-@app.route('/change_password')
-def change_password():
-    is_blocked = firewall.block_access()
-
-    if is_blocked == 403:
-        return render_template('403_page.html'), 403
-
-    return render_template('changepassword.html', csrf_token=session['csrf'])
-
-@app.route('/update_password', methods=['POST'])
-def update_password():
-    
-    is_blocked = firewall.block_access()
-    is_ratelimited = firewall.rate_limiter()
-
-    if is_blocked == 403:
-        return render_template('403_page.html'), 403
-
-    
-    if request.method == 'POST':
-        if is_ratelimited == 429:
-            return render_template('requests_429.html'), 429
-        csrf_token = request.form['csrf_token']
-        old_password = firewall.santitize_input(request.form['old-password'])
-        if firewall.identify_payloads(old_password) == 403:
-            return render_template('malicious_403.html'), 403
-        new_password = firewall.santitize_input((request.form['updated-password']))
-        
-           
-
-        if firewall.identify_payloads(new_password) == 403:
-            return render_template('malicious_403.html'), 403
-        
-        
-        user = User.query.filter_by(id=session['id']).first()
-        if csrf_token:
-            if csrf_token == session['csrf']:
-
-                if verify_password(new_password):
-
-                    if user:
-                        try:
-                            ph.verify(user.hashed_password, old_password)
-                        except VerifyMismatchError:
-                            db.session.rollback()
-                            flash("Previous password is incorrect.")
-                            return redirect(url_for('change_password'))
-                        
-                        
-                        user.hashed_password = ph.hash(new_password)
-                        db.session.commit()
-                        flash("Your password has been updated successfully!", category="success")
-                        return redirect(url_for('view_account'))
-
-                    
-
-                   
-                
-                    
-                    else:
-                        flash("User not found", category="error")
-                        return redirect(url_for('view_account'))
-                else:
-                    flash("Password must contain at least 8 characters, one digit, and one special character of the following:!, ?, %, >, <,:, ;, -, _, /, (, ), [, ], {,}, &, $, @ ")
-                    return redirect(url_for("change_password"))
-            else:
-                flash("CSRF token is incorrect. Request could not be completed.", category="error")
-                return redirect(url_for('view_account'))
-        else:
-            flash("CSRF token is missing. Request could not be completed", category="error")
-            return redirect(url_for('view_account'))
-
-
-@app.route('/delete_account')
-def delete_account():
-    is_blocked = firewall.block_access()
-
-    if is_blocked == 403:
-       return render_template('403_page.html'), 403
-
-    return render_template('deleteaccount.html', csrf_token=session['csrf'])
-
-@app.route('/account_deleted', methods=['POST'])
-def account_deleted():
-    is_blocked = firewall.block_access()
-    is_ratelimited = firewall.rate_limiter()
-
-    if is_blocked == 403:
-        return render_template('403_page.html'), 403
-
-    
-    if request.method == 'POST':
-        if is_ratelimited == 429:
-            return render_template('requests_429.html'), 429
-        csrf_token = request.form['csrf_token']
-        email = firewall.santitize_input(request.form['deleteaccount-email'])
-        if firewall.identify_payloads(email) == 403:
-            return render_template('malicious_403.html'), 403
-        password = firewall.santitize_input(request.form['deleteaccount-password'])
-        if firewall.identify_payloads(password) == 403:
-            return render_template('malicious_403.html'), 403
-        user = User.query.filter_by(email=email).first()
-        if csrf_token:
-            if csrf_token == session['csrf']:
-
-                 if user:
-                    try:
-                        ph.verify(user.hashed_password, password)
-                    except VerifyMismatchError:
-                         db.session.rollback()
-                         flash('Incorrect Password', category="error")
-                         return redirect(url_for('delete_account'))
-                    deleteduser_cart = Cart.query.filter_by(user_id=session['id']).all()
-                    deleteduser_orders = Order.query.filter_by(user_id=session['id']).all()
-                    for order in deleteduser_orders:
-                         db.session.delete(order)
-                    for item in deleteduser_cart:
-                        db.session.delete(item)
-                    db.session.delete(user)
-            
-                    db.session.commit()
-                    flash("Your account has been deleted successfully.")
-                    return redirect(url_for('signup_page'))
-                 else:
-                     flash("User not found.", category="error")
-                     return redirect(url_for("view_account"))
-            else:
-                flash("CSRF token is incorrect. Request could not be completed.", category="error")
-                return redirect(url_for('view_account'))
-        else:
-            flash("CSRF token is missing. Request could not be completed.", category="error")
-            return redirect(url_for('view_account'))"""
 
 
 
@@ -872,87 +615,44 @@ def logout():
     
     return redirect(url_for('login_page'))  
 
-"""@app.route('/reset_page')
-def reset_page():
+
+
     
-    if request.method == 'POST':
-        rate_response = firewall.rate_limiter()
-        
-        if rate_response == 429:
-            return render_template('requests_429.html')
-
-    return render_template('reset_password.html')
-
-
-@app.route('/reset_password', methods=['GET', 'POST'])
-def reset_password():
-    
-    
-    if request.method == 'POST':
-        rate_response = firewall.rate_limiter()
-        
-        if rate_response == 429:
-            return render_template('requests_429.html')
-        email = firewall.santitize_input(request.form['email'])
-        if firewall.identify_payloads(email) == 403:
-            return render_template('mailicious_403.html')
-        returning_user = User.query.filter_by(email=email).first()
-        
-        if returning_user:
-            token = create_token(32)
-            
-            subject = "Verify Your Identity to Reset Your Password"
-            html ='verify_reset.html'
-            send_verificationemail(returning_user.email,token,subject, html)
-            session['reset_token'] = token
-            session['reset_id'] = returning_user.id
-        flash("If the email you entered matches our records, we will send you a link to reset your password. Please check your email to continue.", category="success")
-        return render_template('reset_password.html')
-       
 
 
 
-@app.route('/verify_reset', methods=['GET', 'POST'])
-def verify_reset():
-    submitted_token = request.args['token']
-    if submitted_token:
-        if submitted_token == session['reset_token']:
-            csrf_token = generate_csrf_token()
-            session['reset_csrf'] = csrf_token
-            return render_template('reset_passwordform.html', csrf=csrf_token)
+
+
+
    
-        else:
-            return "Incorrect Token.", 400
-    else:
-        return "No access token found", 400
+
+        
 
 
+        
+        
 
-@app.route('/reset', methods=['GET','POST'])
-def reset():
     
-    if request.method == "POST":
-        rate_response = firewall.rate_limiter()
-        if rate_response == 429:
-            return render_template('requests_429.html')
-        new_password = firewall.santitize_input(request.form['new-password'])
-        if firewall.identify_payloads(new_password) == 429:
-            return render_template('malicious_403.html')
-        confirmed = firewall.santitize_input(request.form['confirm-new'])
-        if firewall.identify_payloads(confirmed) == 429:
-            return render_template('malicious_403.html')
-        csrf_token = request.form['csrf_token']
-
-        if csrf_token:
-            if csrf_token == session['reset_csrf']:
 
 
-                if new_password == confirmed:
-                    user_reset = User.query.filter_by(id=session['reset_id']).first()
-                    if user_reset:
-                        user_reset.hashed_password = ph.hash(new_password)
-                        db.session.commit()
-                        flash("Your password has been successfully reset! However, if you have been temporarily banned due to too many failed login attempts. Please wait until your temporary ban expires before attempting to log in again.", category="success") 
-                        return render_template('reset_passwordform.html', csrf=session['reset_csrf'])
-                          
-                    
+
+
+    
+
+
+
+    
+
+
+
+
+
+            
+    
+
+
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=5003)

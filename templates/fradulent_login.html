@@ -27,4 +27,11 @@
         <form action="/verify_code" method="POST">
             <label class="code-label" for="entered-code">Enter your code here: </label>
             <input class="code-input" type="number" id="entered-code" name="entered-code"  maxlength="6" minlength="6">
-            <
+            <input type="hidden" name="verification-code" value="{{code}}">
+            <button class="code-submit" type="submit">Continue</button>
+
+        </form>
+        
+    </body>
+
+</html>

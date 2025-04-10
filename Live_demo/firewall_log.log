@@ -22,3 +22,4 @@
 2025-04-10 15:41:44,487 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/myshelfspacebrown.png HTTP/1.1" 200 -
 2025-04-10 15:41:44,555 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/paypal-icon.png HTTP/1.1" 200 -
 2025-04-10 15:41:44,555 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/social-icon1.png HTTP/1.1" 200 -
+2025-04-10 16:12:07,445 - INFO -  * Detected change in '/Users/sunny/Documents/GitHub/Digital-Bookstore-Shop/Live_demo/DEMO_newstore.py', reloading
