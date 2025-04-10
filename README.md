@@ -39,6 +39,15 @@ A demo e-commerce website, built using Flask and SQLAlchemy, that was designed t
 
 
 
+## License
+
+This project is licensed under the All Rights Reserved License.
+
+See the [License](./LICENCE.txt) for more information and further details.
+
+
+
+
 ## Copyright
 
 Copyright (c) 2025 Joie Harvey. All rights reserved.
