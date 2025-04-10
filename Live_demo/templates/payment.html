@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <a href=" http://127.0.0.1:5003/product_homepage">
+        <a href=" https://digital-bookstore-shop-shelfspace.onrender.com/product_homepage">
             <img class="corner-logo" src="static/images/myshelfspace.png">
         </a>
         <h1 class="paywithpaypal">Pay With PayPal</h1>
@@ -35,7 +35,7 @@
                 },
                 onApprove: function(data, actions) {
                     return actions.order.capture().then(function(details) {
-                        window.location.href = 'http://127.0.0.1:5003/download_link';
+                        window.location.href = 'https://digital-bookstore-shop-shelfspace.onrender.com/download_link';
                         <!--alert('Transaction completed by ' + details.payer.name.given_name);
                         
                         fetch('/verify-payment', {
