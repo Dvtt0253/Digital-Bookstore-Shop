@@ -15,6 +15,12 @@ from email.mime.multipart import MIMEMultipart
 import paypalrestsdk
 from firewall_lib.flask_firewall import Firewall
 
+# Copyright (c) 2025 Joie Harvey
+# All Rights Reserved.
+#
+# Licensed under the All Rights Reserved. Unauthorized use or redistribution is prohibited.
+
+
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 sender_email = os.getenv('EMAIL')
