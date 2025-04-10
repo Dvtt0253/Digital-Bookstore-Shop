@@ -200,7 +200,7 @@ def reroute():
     if rate_limiting_response == 429:
         return render_template('requests_429.html'), 429
     else:
-        return redirect(url_for('signup_page'))
+        return redirect(url_for('login_page'))
 
     
     
@@ -208,13 +208,6 @@ def reroute():
      
 
 
-@app.route('/signup')
-def signup_page():
-    is_blocked = firewall.block_access()
-
-    if is_blocked == 403:
-         return render_template('403_page.html'), 403
-    return render_template('Create_account.html')
 
 @app.route('/create_account', methods=['POST'])
 def create_account():
