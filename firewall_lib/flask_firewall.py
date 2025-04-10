@@ -7,6 +7,11 @@ import bleach
 import secrets 
 import logging
 
+# Copyright (c) 2025 Joie Harvey
+# All Rights Reserved.
+#
+# Licensed under the All Rights Reserved. Unauthorized use or redistribution is prohibited.
+
 
 
 logging.basicConfig(
