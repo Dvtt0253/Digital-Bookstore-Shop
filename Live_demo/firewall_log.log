@@ -1,25 +1,25 @@
-2025-04-10 15:41:19,938 - INFO - Violations tracker has begun...
-2025-04-10 15:41:19,988 - INFO - 10.0.0.91 has been whitelisted.
-2025-04-10 15:41:19,989 - INFO - 127.0.0.1 has been whitelisted.
-2025-04-10 15:41:19,989 - INFO - 10.0.0.91 has been removed from whitelist.
-2025-04-10 15:41:20,062 - WARNING -  * Debugger is active!
-2025-04-10 15:41:20,102 - INFO -  * Debugger PIN: 441-365-626
-2025-04-10 15:41:27,584 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:27] "[32mGET / HTTP/1.1[0m" 302 -
-2025-04-10 15:41:27,637 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:27] "GET /signup HTTP/1.1" 200 -
-2025-04-10 15:41:27,712 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:27] "GET /static/images/myshelfspace.png HTTP/1.1" 200 -
-2025-04-10 15:41:27,712 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:27] "GET /static/css/styles.css HTTP/1.1" 200 -
-2025-04-10 15:41:31,265 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:31] "GET /login_page HTTP/1.1" 200 -
-2025-04-10 15:41:31,347 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:31] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-04-10 15:41:31,348 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-10 15:41:44,335 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "[32mPOST /auth HTTP/1.1[0m" 302 -
-2025-04-10 15:41:44,358 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /product_homepage HTTP/1.1" 200 -
-2025-04-10 15:41:44,413 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-04-10 15:41:44,423 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-04-10 15:41:44,424 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/abandonedbyjules_cover.jpg HTTP/1.1" 200 -
-2025-04-10 15:41:44,470 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/theartofwar_cover.jpeg HTTP/1.1" 200 -
-2025-04-10 15:41:44,475 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/frankenstein_cover.jpeg HTTP/1.1" 200 -
-2025-04-10 15:41:44,478 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/cart-icon.png HTTP/1.1" 200 -
-2025-04-10 15:41:44,487 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/myshelfspacebrown.png HTTP/1.1" 200 -
-2025-04-10 15:41:44,555 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/paypal-icon.png HTTP/1.1" 200 -
-2025-04-10 15:41:44,555 - INFO - 127.0.0.1 - - [10/Apr/2025 15:41:44] "GET /static/images/social-icon1.png HTTP/1.1" 200 -
-2025-04-10 16:12:07,445 - INFO -  * Detected change in '/Users/sunny/Documents/GitHub/Digital-Bookstore-Shop/Live_demo/DEMO_newstore.py', reloading
+2025-04-12 08:42:09,878 - INFO - Violations tracker has begun...
+2025-04-12 08:42:09,918 - INFO - 10.0.0.91 has been whitelisted.
+2025-04-12 08:42:09,918 - INFO - 127.0.0.1 has been whitelisted.
+2025-04-12 08:42:09,918 - INFO - 10.0.0.91 has been removed from whitelist.
+2025-04-12 08:42:09,985 - WARNING -  * Debugger is active!
+2025-04-12 08:42:10,003 - INFO -  * Debugger PIN: 441-365-626
+2025-04-12 08:42:53,596 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:53] "GET /login_page HTTP/1.1" 200 -
+2025-04-12 08:42:53,689 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:53] "GET /static/images/myshelfspace.png HTTP/1.1" 200 -
+2025-04-12 08:42:54,602 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:54] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-04-12 08:42:56,014 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:56] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-12 08:42:56,026 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:56] "GET /login_page HTTP/1.1" 200 -
+2025-04-12 08:42:56,173 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-12 08:42:56,187 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:56] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-12 08:42:56,703 - INFO - 127.0.0.1 - - [12/Apr/2025 08:42:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 08:43:09,998 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:09] "[32mPOST /auth HTTP/1.1[0m" 302 -
+2025-04-12 08:43:10,421 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "GET /product_homepage HTTP/1.1" 200 -
+2025-04-12 08:43:10,477 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-12 08:43:10,483 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-12 08:43:10,526 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "GET /static/images/theartofwar_cover.jpeg HTTP/1.1" 200 -
+2025-04-12 08:43:10,530 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
+2025-04-12 08:43:10,533 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "[36mGET /static/images/paypal-icon.png HTTP/1.1[0m" 304 -
+2025-04-12 08:43:10,539 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "GET /static/images/social-icon1.png HTTP/1.1" 200 -
+2025-04-12 08:43:10,959 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:10] "GET /static/images/abandonedbyjules_cover.jpg HTTP/1.1" 200 -
+2025-04-12 08:43:11,458 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:11] "GET /static/images/myshelfspacebrown.png HTTP/1.1" 200 -
+2025-04-12 08:43:11,465 - INFO - 127.0.0.1 - - [12/Apr/2025 08:43:11] "GET /static/images/frankenstein_cover.jpeg HTTP/1.1" 200 -

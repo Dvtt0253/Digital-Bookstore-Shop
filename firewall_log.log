@@ -1,84 +1,56 @@
-2025-03-15 06:23:11,943 - INFO - Violations tracker has begun...
-2025-03-15 06:23:12,017 - INFO - 10.0.0.91 has been whitelisted.
-2025-03-15 06:23:12,017 - INFO - 127.0.0.1 has been whitelisted.
-2025-03-15 06:23:12,017 - INFO - 10.0.0.91 has been removed from whitelist.
-2025-03-15 06:23:12,078 - WARNING -  * Debugger is active!
-2025-03-15 06:23:12,096 - INFO -  * Debugger PIN: 441-365-626
-2025-03-15 06:23:16,936 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:16] "GET /login_page HTTP/1.1" 200 -
-2025-03-15 06:23:17,092 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:17,094 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:17] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:18,935 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-03-15 06:23:30,856 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[32mPOST /auth HTTP/1.1[0m" 302 -
-2025-03-15 06:23:30,881 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:23:30,930 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,935 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,939 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,973 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,976 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,979 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:30,984 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:30] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:33,542 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:33] "GET /order_shelf HTTP/1.1" 200 -
-2025-03-15 06:23:33,610 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:33,615 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:33] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:33,640 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:33] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:33,647 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:33] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,408 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:23:35,468 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,473 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,473 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,536 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,547 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,549 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:35,553 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:35] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,037 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[32mPOST /addtocart HTTP/1.1[0m" 302 -
-2025-03-15 06:23:37,049 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:23:37,108 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,112 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,118 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,157 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,162 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,166 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:37,168 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:37] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:42,903 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:42] "[32mPOST /deleted_item HTTP/1.1[0m" 302 -
-2025-03-15 06:23:42,912 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:42] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:23:43,035 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,037 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,040 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,096 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,114 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,127 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:43,129 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:43] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,390 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[32mPOST /deleted_item HTTP/1.1[0m" 302 -
-2025-03-15 06:23:45,401 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:23:45,482 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,527 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,539 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,550 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,560 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,566 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:45,570 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:45] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:47,468 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:47] "GET /checkout HTTP/1.1" 200 -
-2025-03-15 06:23:47,531 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:47,534 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:47] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:23:48,848 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:48] "GET /payment HTTP/1.1" 200 -
-2025-03-15 06:23:48,912 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:23:48,913 - INFO - 127.0.0.1 - - [15/Mar/2025 06:23:48] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:23,647 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:23] "[33mPOST /verify-payment HTTP/1.1[0m" 404 -
-2025-03-15 06:24:25,415 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:25] "GET /download_link HTTP/1.1" 200 -
-2025-03-15 06:24:25,521 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:24:25,525 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:25] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,649 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "GET /product_homepage HTTP/1.1" 200 -
-2025-03-15 06:24:30,709 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,711 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,713 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,747 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,751 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,752 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:24:30,756 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:30] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:32,623 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "GET /order_shelf HTTP/1.1" 200 -
-2025-03-15 06:24:32,684 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2025-03-15 06:24:32,695 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
-2025-03-15 06:24:32,696 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
-2025-03-15 06:24:32,721 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:24:32,726 - INFO - 127.0.0.1 - - [15/Mar/2025 06:24:32] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
-2025-03-15 06:26:29,089 - INFO -  * Detected change in '/Users/sunny/Desktop/digitalproduct_shop/firewall_lib/flask_firewall.py', reloading
+2025-04-10 15:29:47,120 - INFO - Violations tracker has begun...
+2025-04-10 15:29:47,157 - INFO - 10.0.0.91 has been whitelisted.
+2025-04-10 15:29:47,157 - INFO - 127.0.0.1 has been whitelisted.
+2025-04-10 15:29:47,157 - INFO - 10.0.0.91 has been removed from whitelist.
+2025-04-10 15:29:47,215 - WARNING -  * Debugger is active!
+2025-04-10 15:29:47,230 - INFO -  * Debugger PIN: 441-365-626
+2025-04-10 15:29:51,475 - INFO - 127.0.0.1 - - [10/Apr/2025 15:29:51] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-10 15:29:51,505 - INFO - 127.0.0.1 - - [10/Apr/2025 15:29:51] "GET /signup HTTP/1.1" 200 -
+2025-04-10 15:29:51,609 - INFO - 127.0.0.1 - - [10/Apr/2025 15:29:51] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:29:51,609 - INFO - 127.0.0.1 - - [10/Apr/2025 15:29:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:03,863 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:03] "GET /login_page HTTP/1.1" 200 -
+2025-04-10 15:30:03,944 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:03,949 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:03] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,078 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[32mPOST /auth HTTP/1.1[0m" 302 -
+2025-04-10 15:30:16,103 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "GET /product_homepage HTTP/1.1" 200 -
+2025-04-10 15:30:16,173 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,174 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,174 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,217 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,227 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,230 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,239 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,242 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/myshelfspacebrown.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,247 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/paypal-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:16,248 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:16] "[36mGET /static/images/social-icon1.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:30,506 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:30] "GET /order_shelf HTTP/1.1" 200 -
+2025-04-10 15:30:30,629 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:30] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:30,631 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,112 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "GET /product_homepage HTTP/1.1" 200 -
+2025-04-10 15:30:32,232 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,233 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,253 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,259 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,262 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,308 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,349 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/myshelfspacebrown.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,372 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/paypal-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,376 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/social-icon1.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:32,380 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:32] "[36mGET /static/images/trash%20image.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,319 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[32mPOST /deleted_item HTTP/1.1[0m" 302 -
+2025-04-10 15:30:35,339 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "GET /product_homepage HTTP/1.1" 200 -
+2025-04-10 15:30:35,410 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/abandonedbyjules_cover.jpg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,420 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,427 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,466 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/theartofwar_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,466 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/frankenstein_cover.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,478 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/cart-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,483 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/myshelfspacebrown.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,492 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/paypal-icon.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:35,493 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:35] "[36mGET /static/images/social-icon1.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:43,840 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:43] "GET /viewaccount HTTP/1.1" 200 -
+2025-04-10 15:30:43,915 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:43] "[36mGET /static/images/myshelfspace.png HTTP/1.1[0m" 304 -
+2025-04-10 15:30:43,915 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-04-10 15:30:43,922 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:43] "[36mGET /static/images/profilepicture.jpeg HTTP/1.1[0m" 304 -
+2025-04-10 15:30:59,555 - INFO - 127.0.0.1 - - [10/Apr/2025 15:30:59] "[33mPOST /change_email HTTP/1.1[0m" 404 -
+2025-04-10 15:39:41,068 - INFO -  * Detected change in '/Users/sunny/Documents/GitHub/Digital-Bookstore-Shop/Live_demo/DEMO_newstore.py', reloading
